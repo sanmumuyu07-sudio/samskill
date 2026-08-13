@@ -1,8 +1,16 @@
 {
   "name": "samskill",
-  "version": "1.0.0-beta.3",
-  "release_date": "2026-08-13",
+  "version": "1.0.0-beta.4",
+  "release_date": "2026-08-14",
   "license": "MIT",
+  "knowledge_base": {
+    "version": "0.1.0-public-beta",
+    "modules": 17,
+    "atoms": 203,
+    "published_sources": 78,
+    "source_register": 79,
+    "atom_skill_edges": 514
+  },
   "skills": [
     "samskill",
     "sam-project-diagnosis",

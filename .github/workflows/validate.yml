@@ -24,5 +24,7 @@ jobs:
         run: python3 scripts/validate_public_release.py
       - name: Validate every skill
         run: python3 scripts/validate_skills.py
+      - name: Validate public atom library
+        run: python3 scripts/validate_public_knowledge_base.py
       - name: Run tests
         run: python3 -m unittest tests/test_release.py -v

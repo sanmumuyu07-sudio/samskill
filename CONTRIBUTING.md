@@ -31,6 +31,7 @@
 
 ```bash
 python3 scripts/validate_public_release.py
+python3 scripts/validate_public_knowledge_base.py
 ```
 
 涉及触发、输入或输出时，同时更新对应 `evals` 或 `tests/`。

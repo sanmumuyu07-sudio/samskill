@@ -12,6 +12,10 @@ Samskill 的判断层综合使用市场营销、商业模式、社会学、社�
 
 各模块的概念来源、吸收范围和适用边界，记录在对应 `references/*来源与概念映射.md` 与 `references/source-map.md` 中。
 
+公开原子库的 `knowledge-base/sources/` 保存的是来源说明、叁木吸收的关系、适用边界和待核缺口，不是第三方书籍、论文、课程或 Skill 全文。
+
+未确认再分发权限的材料只进入 `knowledge-base/source-register.csv` 的受限登记，不复制正文。
+
 仓库中的作者名、书名或理论名只用于必要的来源说明、适用边界与反例辨析。
 
 这些名称不表示作者、出版社或相关项目对 Samskill 的认可、授权或背书。

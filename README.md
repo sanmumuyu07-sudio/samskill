@@ -12,9 +12,9 @@ Samskill 面向正在做个人 IP、一人媒体、自然流短视频、内容�
 
 它会先判断你当前真正卡在哪个环节，再调用对应的专项 Skill，给出结论、依据、行动方案、验收标准和下一步。
 
-**当前版本：[`v1.0.0-beta.3`](https://github.com/sanmumuyu07-sudio/samskill/releases/tag/v1.0.0-beta.3)**
+**当前版本：[`v1.0.0-beta.4`](https://github.com/sanmumuyu07-sudio/samskill/releases/tag/v1.0.0-beta.4)**
 
-[三分钟开始](docs/01_三分钟开始.md) · [安装说明](docs/02_安装升级与卸载.md) · [任务地图](docs/05_任务与Skill对照.md) · [交付示例](examples) · [提交反馈](https://github.com/sanmumuyu07-sudio/samskill/issues)
+[三分钟开始](docs/01_三分钟开始.md) · [安装说明](docs/02_安装升级与卸载.md) · [公开原子库](knowledge-base/README.md) · [任务地图](docs/05_任务与Skill对照.md) · [交付示例](examples) · [提交反馈](https://github.com/sanmumuyu07-sudio/samskill/issues)
 
 Samskill 由 [Samstudio](#关于-samstudio) 发起并持续维护。
 
@@ -152,7 +152,7 @@ Samskill 不把所有“洗稿”请求强制改成同一种方式。
 推荐先安装固定版本，方便复现测试结果：
 
 ```bash
-git clone --depth 1 --branch v1.0.0-beta.3 https://github.com/sanmumuyu07-sudio/samskill.git
+git clone --depth 1 --branch v1.0.0-beta.4 https://github.com/sanmumuyu07-sudio/samskill.git
 cd samskill
 python3 scripts/install.py --target ~/.codex/skills --dry-run
 python3 scripts/install.py --target ~/.codex/skills
@@ -164,7 +164,7 @@ python3 scripts/verify_install.py --target ~/.codex/skills
 ### Claude Code
 
 ```bash
-git clone --depth 1 --branch v1.0.0-beta.3 https://github.com/sanmumuyu07-sudio/samskill.git
+git clone --depth 1 --branch v1.0.0-beta.4 https://github.com/sanmumuyu07-sudio/samskill.git
 cd samskill
 python3 scripts/install.py --target ~/.claude/skills --dry-run
 python3 scripts/install.py --target ~/.claude/skills
@@ -219,6 +219,8 @@ Samskill 当前处于 **Public Beta**，可以安装和试用，但还不是经�
 - 一个总入口和 17 个专项 Skill，共 18 个独立 Skill 包。
 - 每个 Skill 均包含最低输入、增益材料、降级规则和用户输出模板。
 - 根级发布校验、18 个独立包校验、路径与隐私泄漏扫描。
+- 17 个模块、203 张方法原子、78 张公开来源卡与 79 条来源登记。
+- 原子到 Skill 的追踪表，并区分“当前运行包明确引用”与“按模块职责建立的候选关系”。
 - 正反触发测试、输出质量断言和安装／升级／卸载回归测试。
 - 同名目录冲突保护、升级前备份、安装记录和可恢复卸载。
 - MIT 许可证、贡献指南、安全说明、Issue 模板和 CI 校验。
@@ -243,13 +245,22 @@ Samskill 当前处于 **Public Beta**，可以安装和试用，但还不是经�
 
 更完整的证据与限制见 [开源发布审核](OPEN_SOURCE_AUDIT.md)、[发布门禁](RELEASE_CHECKLIST.md) 和 [原子库与标准完整度审计](docs/09_原子库与标准完整度审计.md)。
 
-## 公开包包含什么
+## 公开原子库
 
-公开仓库包含从叁木方法论和原子库编译出的运行子集：任务规则、输入卡、输出合同、参考资料、测试集和安装工具。
+从 beta.4 开始，公开仓库同时包含两层内容：
 
-它不是完整私人原子库、客户资料或项目档案的镜像。
+- `skills/`：18 个可以独立安装的运行包，包含当前任务需要的裁剪资料。
+- `knowledge-base/`：17 个模块、203 张 `SAM-*` 方法原子、78 张净化来源卡和 1 条受限来源登记。
+- `standards/`：证据、案例、跨模块优先级、时效版本与渐进加载协议。
 
-这不会导致公开包必须依赖私有资料才能启动；公开版的运行资料已经随各 Skill 自包含。后续会根据真实测试，持续补充脱敏案例、失败样本和跨场景校准规则。
+公开原子库解决的是可追溯、可审核和可贡献，不会在每次调用时把 203 张卡全部加载进上下文。
+
+`atom-skill-map.csv` 中：
+
+- `explicit_runtime_reference` 表示当前 Skill 运行资料已经明确引用该原子。
+- `module_scope_candidate` 只表示职责相关，是后续测试和收敛候选，不能冒充已经调用。
+
+公开版仍不是私人研发库、客户资料和项目档案的镜像。受限来源会登记缺口，不会复制未确认再分发权限的第三方 Skill 正文。
 
 ## 隐私、安全与版权
 
@@ -271,6 +282,7 @@ Samskill 当前处于 **Public Beta**，可以安装和试用，但还不是经�
 | 一个任务该用哪个 Skill | [任务与 Skill 对照](docs/05_任务与Skill对照.md) |
 | 安装或触发失败怎么办 | [常见问题](docs/06_常见问题.md) |
 | 18 个 Skill 分别交付什么 | [详细输出框架](docs/08_18个Skill详细输出框架.md) |
+| 方法判断来自哪里 | [公开原子库](knowledge-base/README.md) |
 | 公开原子库和标准是否完整 | [完整度审计](docs/09_原子库与标准完整度审计.md) |
 
 ## 仓库结构
@@ -278,6 +290,8 @@ Samskill 当前处于 **Public Beta**，可以安装和试用，但还不是经�
 ```text
 samskill/
 ├── skills/       # 一个总入口和 17 个专项 Skill
+├── knowledge-base/ # 17 个模块、203 张方法原子与来源登记
+├── standards/    # 跨 Skill 统一证据、案例、时效与加载协议
 ├── docs/         # 安装、输入输出、权限和任务说明
 ├── examples/     # 脱敏交付示例
 ├── scripts/      # 安装、校验、卸载和发布检查
@@ -291,6 +305,7 @@ samskill/
 ```bash
 python3 scripts/validate_public_release.py
 python3 scripts/validate_skills.py
+python3 scripts/validate_public_knowledge_base.py
 python3 -m unittest tests/test_release.py -v
 ```
 

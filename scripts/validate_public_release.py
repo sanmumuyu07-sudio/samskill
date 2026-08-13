@@ -49,6 +49,11 @@ REQUIRED_ROOT = {
     "manifest.json",
 }
 
+REQUIRED_DIRECTORIES = {
+    "knowledge-base",
+    "standards",
+}
+
 ABSOLUTE_PATH = re.compile(r"/(?:Users|home)/[^\s`\"']+")
 WINDOWS_PATH = re.compile(r"[A-Za-z]:\\\\(?:Users|Documents and Settings)\\\\", re.I)
 SECRET_PATTERNS = {
@@ -212,14 +217,29 @@ def main() -> int:
         if not ROOT.joinpath(relative).is_file():
             fail(errors, f"missing root file: {relative}")
 
+    for relative in REQUIRED_DIRECTORIES:
+        if not ROOT.joinpath(relative).is_dir():
+            fail(errors, f"missing root directory: {relative}")
+
     manifest_path = ROOT / "manifest.json"
     if manifest_path.is_file():
         try:
             manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
             if set(manifest.get("skills", [])) != EXPECTED:
                 fail(errors, "manifest skill set mismatch")
-            if manifest.get("version") != "1.0.0-beta.3":
+            if manifest.get("version") != "1.0.0-beta.4":
                 fail(errors, "manifest version mismatch")
+            knowledge_base = manifest.get("knowledge_base", {})
+            expected_knowledge = {
+                "version": "0.1.0-public-beta",
+                "modules": 17,
+                "atoms": 203,
+                "published_sources": 78,
+                "source_register": 79,
+                "atom_skill_edges": 514,
+            }
+            if knowledge_base != expected_knowledge:
+                fail(errors, "manifest knowledge-base metadata mismatch")
         except Exception as exc:  # noqa: BLE001
             fail(errors, f"invalid manifest.json: {exc}")
 
@@ -239,7 +259,7 @@ def main() -> int:
 
     result = {
         "valid": not errors,
-        "release": "1.0.0-beta.3",
+        "release": "1.0.0-beta.4",
         "skills": len(EXPECTED),
         "errors": errors,
     }
