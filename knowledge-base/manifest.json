@@ -1,0 +1,9 @@
+{
+  "version": "0.1.0-public-beta",
+  "generated_from": "internal-source-not-distributed",
+  "modules": 17,
+  "atoms": 203,
+  "published_sources": 78,
+  "withheld_or_missing_sources": 1,
+  "atom_skill_edges": 514
+}

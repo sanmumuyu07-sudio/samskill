@@ -13,6 +13,7 @@
 ## 验证
 
 - [ ] `python3 scripts/validate_public_release.py`
+- [ ] `python3 scripts/validate_public_knowledge_base.py`
 - [ ] `python3 scripts/validate_skills.py`
 - [ ] `python3 -m unittest tests/test_release.py -v`
 - [ ] 已更新相关 `evals`

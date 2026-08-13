@@ -42,6 +42,24 @@ class ReleaseTests(unittest.TestCase):
         self.assertTrue(payload["ok"])
         self.assertEqual(payload["count"], 18)
 
+    def test_public_knowledge_base_validates(self) -> None:
+        result = run("scripts/validate_public_knowledge_base.py")
+        payload = json.loads(result.stdout)
+        self.assertTrue(payload["valid"])
+        self.assertEqual(payload["modules"], 17)
+        self.assertEqual(payload["atoms"], 203)
+        self.assertEqual(payload["sources"], 78)
+        self.assertEqual(payload["source_register"], 79)
+
+    def test_public_atom_mapping_distinguishes_current_and_candidate_links(self) -> None:
+        import csv
+
+        mapping = ROOT / "knowledge-base" / "atom-skill-map.csv"
+        with mapping.open(encoding="utf-8", newline="") as handle:
+            rows = list(csv.DictReader(handle))
+        basis = {row["mapping_basis"] for row in rows}
+        self.assertEqual(basis, {"explicit_runtime_reference", "module_scope_candidate"})
+
     def test_public_release_has_governance_files(self) -> None:
         required = {
             "TRADEMARKS.md",
@@ -59,6 +77,8 @@ class ReleaseTests(unittest.TestCase):
             "wx" + "id_",
             "Obsidian " + "Vault",
             "嘉寅文化" + "传媒有限公司",
+            "db" + "skill",
+            "dbs" + "-hook",
         )
         secret_shapes = (
             "gh" + "p_",
