@@ -16,6 +16,8 @@ Samskill 面向正在做个人 IP、一人媒体、自然流短视频、内容�
 
 [三分钟开始](docs/01_三分钟开始.md) · [安装说明](docs/02_安装升级与卸载.md) · [任务地图](docs/05_任务与Skill对照.md) · [交付示例](examples) · [提交反馈](https://github.com/sanmumuyu07-sudio/samskill/issues)
 
+Samskill 由 [Samstudio](#关于-samstudio) 发起并持续维护。
+
 ## Samskill 是什么
 
 一个真实的自媒体项目，很少只缺一篇文案。
@@ -298,6 +300,18 @@ python3 -m unittest tests/test_release.py -v
 - 安全、隐私、未授权材料或客户信息：不要粘贴原文到公开 Issue，请按 [安全说明](SECURITY.md) 提交最小化报告。
 - 想增加规则、案例或测试：先阅读 [贡献指南](CONTRIBUTING.md)。
 - 版本变化：查看 [CHANGELOG](CHANGELOG.md) 与 [Releases](https://github.com/sanmumuyu07-sudio/samskill/releases)。
+
+## 关于 Samstudio
+
+Samstudio 是由叁木发起的一人媒体与 AI 内容协作实验室。
+
+我们研究的不是怎样让 AI 批量生成更多内容，而是怎样把市场判断、人群理解、内容表达、自然流运营、商业承接和项目复盘，变成个人与小团队能够实际运行、持续校准和长期积累的系统。
+
+Samskill 是 Samstudio 的第一个开源项目。
+
+在 GitHub，我们开放可以安装、检查和共同改进的 Skill、文档与测试；在叁木的内容账号，我们继续讲清这些方法为什么成立、在真实项目里怎样使用，以及哪些判断在测试后需要被推翻。
+
+如果你想了解 Samskill 背后的方法论、真实测试和后续更新，可以在抖音搜索 **「叁木」**。
 
 ## 许可证与名称
 
