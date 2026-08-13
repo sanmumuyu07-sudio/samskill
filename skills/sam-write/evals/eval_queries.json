@@ -1,0 +1,122 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "按照这个选题和材料，先给大纲再写完整短视频文案。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "写第二条，不要因为时长压缩核心论证。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "把这份研究包写成一篇有时代共鸣但不空泛的口播稿。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "按叁木写作标准写一篇知识库对外内容。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "选题、证据和风格卡都在文件夹里，请生成完整初稿。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "请使用 $sam-write 处理：按照这个选题和材料，先给大纲再写完整短视频文案。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "我把资料放在文件夹里了。写第二条，不要因为时长压缩核心论证。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "接着上次的项目状态继续。把这份研究包写成一篇有时代共鸣但不空泛的口播稿。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我说得比较乱，你先按已有信息判断。按叁木写作标准写一篇知识库对外内容。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我需要一份可以执行和验证的方案：选题、证据和风格卡都在文件夹里，请生成完整初稿。",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "这篇稿已经写完，只帮我修改。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "只检查文案能不能发布。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "我没材料，你帮我编一个亲身经历。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "给我找10个选题。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "从20篇样本提炼我的风格。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "帮我查明天的天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "把这个Word转成PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "帮我写一段Python排序代码。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "我最近心情很差，只想找人聊聊。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "审核 sam-write 这个Skill本身是否符合官方规范。",
+    "should_trigger": false
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "把叁木原子库做成一套成熟Skill系统。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "AI每月能出40条内容，但质量不稳定，怎么建立反馈规则？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "把我的项目资料整理成可被Agent调用的数字资产。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "团队只会执行SOP不会迭代，怎么完成判断交接？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "设计一个有人审批、可以回退的AI内容工作流。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "请使用 $sam-assets 处理：把叁木原子库做成一套成熟Skill系统。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "我把资料放在文件夹里了。AI每月能出40条内容，但质量不稳定，怎么建立反馈规则？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "接着上次的项目状态继续。把我的项目资料整理成可被Agent调用的数字资产。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我说得比较乱，你先按已有信息判断。团队只会执行SOP不会迭代，怎么完成判断交接？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我需要一份可以执行和验证的方案：设计一个有人审批、可以回退的AI内容工作流。",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "直接替我决定市场和定位并自动发布。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "只帮我写一篇短视频文案。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "把一份Word归档到指定文件夹。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "分析这条视频为什么没流量。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "设计一个299元知识库产品。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "帮我查明天的天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "把这个Word转成PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "帮我写一段Python排序代码。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "我最近心情很差，只想找人聊聊。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "审核 sam-assets 这个Skill本身是否符合官方规范。",
+    "should_trigger": false
+  }
+]

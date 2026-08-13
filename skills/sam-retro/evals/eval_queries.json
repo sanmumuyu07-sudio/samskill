@@ -1,0 +1,122 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "这条视频只有500播放，是不是开头不行？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "把近30条视频按栏目复盘，找出稳定问题和下一实验。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "播放高但咨询低，帮我连接平台和业务数据。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "同一选题发了两个版本，能不能判断哪个机制更有效？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "建立一套自然流短视频的数据字典和复盘标准。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "请使用 $sam-retro 处理：这条视频只有500播放，是不是开头不行？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "我把资料放在文件夹里了。把近30条视频按栏目复盘，找出稳定问题和下一实验。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "接着上次的项目状态继续。播放高但咨询低，帮我连接平台和业务数据。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我说得比较乱，你先按已有信息判断。同一选题发了两个版本，能不能判断哪个机制更有效？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我需要一份可以执行和验证的方案：建立一套自然流短视频的数据字典和复盘标准。",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "帮我写一条高完播的开头。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "账号还没发内容，先做定位。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "设计知识库产品的交付。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "把评论私信转成销售话术。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "整理我的全部资料做知识库。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "帮我查明天的天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "把这个Word转成PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "帮我写一段Python排序代码。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "我最近心情很差，只想找人聊聊。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "审核 sam-retro 这个Skill本身是否符合官方规范。",
+    "should_trigger": false
+  }
+]

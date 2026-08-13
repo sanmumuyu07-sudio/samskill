@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜AI与数字资产"
+  short_description: "把资料、反馈和成熟方法变成可调用、可更新、可交接的资产系统"
+  default_prompt: "使用 $sam-assets 设计AI或团队协作系统。要接手的任务是【】，当前流程、输入、输出、错误成本和验收是【】，真源、版本、权限与反馈位置是【】，必须人工批准的是【】。"

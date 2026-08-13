@@ -1,0 +1,122 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "个人IP第一步不是做人设，这个选题能不能做？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "从评论、搜索和我的项目经历里帮我找10个高质量选题。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "我想讲AI时代的焦虑，怎样找到不空泛的具体角度？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "这个热点和我的长期命题有关系吗，值不值得跟？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "帮我把这个模糊话题整理成可以交给写作的选题卡。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "请使用 $sam-topic 处理：个人IP第一步不是做人设，这个选题能不能做？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "我把资料放在文件夹里了。从评论、搜索和我的项目经历里帮我找10个高质量选题。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "接着上次的项目状态继续。我想讲AI时代的焦虑，怎样找到不空泛的具体角度？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我说得比较乱，你先按已有信息判断。这个热点和我的长期命题有关系吗，值不值得跟？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我需要一份可以执行和验证的方案：帮我把这个模糊话题整理成可以交给写作的选题卡。",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "选题已经定了，直接帮我写完整逐字稿。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "只优化这条视频的标题和开头。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "帮账号制定未来三个月栏目。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "研究这个陌生概念的全部来源。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "复盘近30条内容的数据。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "帮我查明天的天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "把这个Word转成PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "帮我写一段Python排序代码。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "我最近心情很差，只想找人聊聊。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "审核 sam-topic 这个Skill本身是否符合官方规范。",
+    "should_trigger": false
+  }
+]

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全与隐私问题
+    url: https://github.com/sanmumuyu07-sudio/samskill/security
+    about: 不要在公开 Issue 中提交敏感材料。

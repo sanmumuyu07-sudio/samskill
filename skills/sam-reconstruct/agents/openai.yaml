@@ -1,0 +1,7 @@
+interface:
+  display_name: "叁木参考内容改写与重构"
+  short_description: "先判断忠实参考型改写或独立原创重构，再按对应边界完成新稿"
+  brand_color: "#6D28D9"
+  default_prompt: "使用 $sam-reconstruct 处理这份参考材料【】。来源与权限是【】，准备【内部使用／公开发布】。请先判断应该保留原稿内容与逻辑来改写，还是借题建立一篇独立原创新稿，再按对应规则完成交付。"
+policy:
+  allow_implicit_invocation: true

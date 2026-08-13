@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜用户与定位"
+  short_description: "深描用户处境、社会心理、决策与市场价值，建立可验证定位"
+  default_prompt: "使用 $sam-position 深描这类用户。一次真实搜索、咨询、购买或放弃事件是【】，本轮要决定【定位／内容／产品／市场】，我的结果与凭据是【】，已有材料在【】。"

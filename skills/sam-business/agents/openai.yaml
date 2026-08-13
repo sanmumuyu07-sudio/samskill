@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜市场与商业判断"
+  short_description: "判断需求、交易、竞争和进入条件，给出最小市场验证"
+  default_prompt: "使用 $sam-business 判断这项业务。我准备做【】，未来30—90天希望【】，用户当前替代方案是【】，已有行为或交易证据是【】，我的进入条件与限制是【】。"

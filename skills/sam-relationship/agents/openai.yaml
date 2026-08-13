@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜线索与交付"
+  short_description: "连接内容、线索、成交、交付与复购，定位最早承接断点"
+  default_prompt: "使用 $sam-relationship 检查承接。目标结果是【】，有效结果定义是【】，过去【时间】各层数量和来源是【】，产品、价格、销售、交付、退款和复购是【】。"

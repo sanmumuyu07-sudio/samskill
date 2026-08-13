@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜生产与自然流运营"
+  short_description: "把通过审计的内容变成可拍摄、可发布、可交接和可复盘的任务"
+  default_prompt: "使用 $sam-operations 安排内容生产。当前状态是【】，平台与频率是【】，负责人、执行和审批是【】，工时、库存、设备、预算和承接能力是【】，审计版本在【】。"

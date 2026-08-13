@@ -1,0 +1,15 @@
+{
+  "project_id": "bad-demo",
+  "generated_at": "2026-08-12",
+  "diagnosis_mode": "new",
+  "user_role": "owner",
+  "target": {"statement": "做好IP", "window": "以后"},
+  "stage": {"code": "P2", "scope": "全项目", "confidence": "high"},
+  "capabilities": {"formed": [], "signals": [], "unvalidated": []},
+  "evidence_added": [],
+  "bottleneck": {"module": "99", "statement": "都不完整", "rationale": "感觉"},
+  "decisions": {"keep": [], "change": [], "defer": []},
+  "seven_day_plan": [],
+  "permission": {"preview_only": false, "approved_write_path": "/tmp/project.md"},
+  "versions": {"skill": "1.0", "atom_library": "1.0"}
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜内容战略"
+  short_description: "建立长期命题、栏目组合、内容配比和更新节奏"
+  default_prompt: "使用 $sam-strategy 规划未来【30／60／90】天内容。核心结果是【】，非目标是【】，目标用户当前状态是【】，现有定位、产品、平台、数据和产能是【】。"

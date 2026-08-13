@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sam-write state delta",
+  "type": "object",
+  "required": [
+    "intake",
+    "source_skill",
+    "project_id",
+    "generated_at",
+    "task",
+    "confidence",
+    "evidence",
+    "conclusion",
+    "keep",
+    "change",
+    "defer",
+    "data",
+    "actions",
+    "next_route",
+    "permission",
+    "versions"
+  ],
+  "properties": {
+    "intake": {
+      "type": "object",
+      "required": [
+        "delivery_audience",
+        "delivery_mode",
+        "confirmed",
+        "tentative",
+        "ambiguous",
+        "conflicting",
+        "unknown",
+        "blocking_confirmations",
+        "nonblocking_unknowns",
+        "affected_sections"
+      ],
+      "properties": {
+        "delivery_audience": {
+          "enum": [
+            "self",
+            "team",
+            "client",
+            "project"
+          ]
+        },
+        "delivery_mode": {
+          "enum": [
+            "conversation",
+            "tentative",
+            "internal",
+            "client",
+            "ledger"
+          ]
+        },
+        "confirmed": {
+          "type": "array"
+        },
+        "tentative": {
+          "type": "array"
+        },
+        "ambiguous": {
+          "type": "array"
+        },
+        "conflicting": {
+          "type": "array"
+        },
+        "unknown": {
+          "type": "array"
+        },
+        "blocking_confirmations": {
+          "type": "array"
+        },
+        "nonblocking_unknowns": {
+          "type": "array"
+        },
+        "affected_sections": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_skill": {
+      "const": "sam-write"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "task": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "conclusion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "keep": {
+      "type": "array"
+    },
+    "change": {
+      "type": "array",
+      "minItems": 1
+    },
+    "defer": {
+      "type": "array"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "writing_mode": {
+          "type": "string"
+        },
+        "framework_selection": {
+          "type": "object"
+        },
+        "framework_version": {
+          "type": "string"
+        },
+        "form_selection": {
+          "type": "object"
+        },
+        "packaging_variants": {
+          "type": "array"
+        }
+      }
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1
+    },
+    "next_route": {
+      "type": "string"
+    },
+    "permission": {
+      "type": "object",
+      "properties": {
+        "preview_only": {
+          "const": true
+        },
+        "approved_write_path": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "preview_only",
+        "approved_write_path"
+      ]
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "const": "2.2.0-beta"
+        },
+        "atom_library": {
+          "const": "2.0"
+        }
+      },
+      "required": [
+        "skill",
+        "atom_library"
+      ]
+    }
+  }
+}

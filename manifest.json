@@ -1,0 +1,34 @@
+{
+  "name": "samskill",
+  "version": "1.0.0-beta.3",
+  "release_date": "2026-08-13",
+  "license": "MIT",
+  "skills": [
+    "samskill",
+    "sam-project-diagnosis",
+    "sam-business",
+    "sam-product",
+    "sam-position",
+    "sam-benchmark",
+    "sam-reconstruct",
+    "sam-research",
+    "sam-strategy",
+    "sam-topic",
+    "sam-style",
+    "sam-write",
+    "sam-edit",
+    "sam-audit",
+    "sam-operations",
+    "sam-relationship",
+    "sam-retro",
+    "sam-assets"
+  ],
+  "minimum_skill_files": [
+    "SKILL.md",
+    "agents/openai.yaml",
+    "assets/input-card.md",
+    "assets/output-template.md",
+    "evals/evals.json",
+    "evals/eval_queries.json"
+  ]
+}

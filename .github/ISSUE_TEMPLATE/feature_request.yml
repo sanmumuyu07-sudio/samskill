@@ -1,0 +1,36 @@
+name: Feature request
+description: 提议新的任务能力或规则
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: situation
+    attributes:
+      label: 真实使用场景
+      description: 谁在什么阶段遇到了什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 当前流程为何解决不了
+    validations:
+      required: true
+  - type: textarea
+    id: delivery
+    attributes:
+      label: 期望得到的可检查交付
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据、反例与边界
+      description: 不接受只有“感觉更好”的规则。
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 发布确认
+      options:
+        - label: 我已移除客户、隐私、密钥和未授权材料。
+          required: true

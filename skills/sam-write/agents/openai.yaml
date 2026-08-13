@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜内容创作"
+  short_description: "把选题、证据和作者判断写成结构完整、能够传播的内容初稿"
+  default_prompt: "使用 $sam-write 完整创作。写给【】，希望改变【理解或行动】，核心判断是【】，证据与案例是【】，最大反驳是【】，载体和长度是【】，作者材料在【】。"

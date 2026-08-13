@@ -1,0 +1,134 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "我的用户是高认知但缺执行力的人，这个人群定义成立吗？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "账号今天讲AI明天讲创业，咨询也很杂，帮我重做定位。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "我有很多项目经验，但不知道用什么公共角色让别人记住我。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "内容播放不错但来的不是目标客户，问题可能在定位哪里？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "请从用户任务、产品和个人证据帮我做一份账号定位。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "请使用 $sam-position 处理：我的用户是高认知但缺执行力的人，这个人群定义成立吗？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "我把资料放在文件夹里了。账号今天讲AI明天讲创业，咨询也很杂，帮我重做定位。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "接着上次的项目状态继续。我有很多项目经验，但不知道用什么公共角色让别人记住我。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我说得比较乱，你先按已有信息判断。内容播放不错但来的不是目标客户，问题可能在定位哪里？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我需要一份可以执行和验证的方案：请从用户任务、产品和个人证据帮我做一份账号定位。",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "帮我把简介压缩成20个字。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "找五个值得模仿的同行账号。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "给我生成50个选题。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "判断AI行业有没有机会。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "把这篇稿子改得更口语。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "帮我查明天的天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "把这个Word转成PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "帮我写一段Python排序代码。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "我最近心情很差，只想找人聊聊。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "审核 sam-position 这个Skill本身是否符合官方规范。",
+    "should_trigger": false
+  },
+  {
+    "id": "trigger-11",
+    "split": "validation",
+    "query": "完整拆解女性两性赛道的人群类型，既看社会心理，也看市场价值。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-12",
+    "split": "validation",
+    "query": "按照处境、任务、决策链、付费和内容入口给我做一份赛道人群地图。",
+    "should_trigger": true
+  }
+]

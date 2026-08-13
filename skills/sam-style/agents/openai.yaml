@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜表达标准"
+  short_description: "从真实样本与修改反馈建立可执行、可迭代的作者表达标准"
+  default_prompt: "使用 $sam-style 建立表达标准。认可样本在【】，不认可或修改样本在【】，主要用于【载体／任务】，最想保留【】，必须禁止【】。"

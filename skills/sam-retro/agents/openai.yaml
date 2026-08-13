@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜数据复盘"
+  short_description: "核对数据口径，定位最早异常并设计下一轮单变量实验"
+  default_prompt: "使用 $sam-retro 复盘这批内容。平台和时间窗口是【】，内容版本与目标是【】，后台字段、截图或导出在【】，同账号同类基线和相邻业务数据是【】。"

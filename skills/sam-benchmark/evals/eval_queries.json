@@ -1,0 +1,134 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "帮我拆解这个留学探校街采账号，判断我能迁移什么。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "我该找什么样的对标，不想只看粉丝量。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "这个博主的商业模式为什么成立，哪些是外部资源？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "我想洗稿这条爆款，你先帮我拆成可以合法迁移的机制。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "对比三个知识付费IP，筛出最适合我当前阶段的参考样本。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "请使用 $sam-benchmark 处理：帮我拆解这个留学探校街采账号，判断我能迁移什么。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "我把资料放在文件夹里了。我该找什么样的对标，不想只看粉丝量。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "接着上次的项目状态继续。这个博主的商业模式为什么成立，哪些是外部资源？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我说得比较乱，你先按已有信息判断。我想洗稿这条爆款，你先帮我拆成可以合法迁移的机制。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我需要一份可以执行和验证的方案：对比三个知识付费IP，筛出最适合我当前阶段的参考样本。",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "直接照着这条视频给我改写一版。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "帮我做整个行业机会判断。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "分析我自己账号过去30天数据。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "给我写一份完整课程文案。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "只优化这条视频的开头。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "帮我查明天的天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "把这个Word转成PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "帮我写一段Python排序代码。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "我最近心情很差，只想找人聊聊。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "审核 sam-benchmark 这个Skill本身是否符合官方规范。",
+    "should_trigger": false
+  },
+  {
+    "id": "trigger-11",
+    "split": "validation",
+    "query": "完整拆解这个账号的人群、内容规划、流量机制、产品和商业模式。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-12",
+    "split": "validation",
+    "query": "不要只挑爆款，按近期、常态、商业样本做一份账号全景分析。",
+    "should_trigger": true
+  }
+]

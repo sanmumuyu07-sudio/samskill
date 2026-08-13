@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sam-reconstruct state delta",
+  "type": "object",
+  "required": ["skill", "version", "intake", "reconstruction", "handoff"],
+  "properties": {
+    "skill": {"const": "sam-reconstruct"},
+    "version": {"const": "2.5.0-beta"},
+    "intake": {"type": "object"},
+    "reconstruction": {
+      "type": "object",
+      "required": ["task_mode", "output_depth", "source_status", "rights_classification", "completion_status"],
+      "properties": {
+        "task_mode": {"enum": ["faithful_adaptation", "independent_reconstruction"]},
+        "output_depth": {"enum": ["quick", "co_create", "research_audit"]},
+        "output_depth_source": {"enum": ["explicit", "auto"]},
+        "source_status": {},
+        "source_fingerprint": {"type": "object"},
+        "rights_classification": {"type": "object"},
+        "source_map": {"type": "object"},
+        "preserve": {"type": "array"},
+        "adapt": {"type": "array"},
+        "rebuild": {"type": "array"},
+        "author_confirmations": {"type": "array"},
+        "sample_status": {"enum": ["not_needed", "previewed", "approved", "revision_requested"]},
+        "upstream_research_reused": {"type": "boolean"},
+        "mechanism_hypothesis": {},
+        "direction_gate": {
+          "type": "object",
+          "required": ["audience", "author_role", "independent_material", "content_destination", "status"],
+          "properties": {
+            "audience": {},
+            "author_role": {},
+            "independent_material": {},
+            "content_destination": {},
+            "status": {"enum": ["confirmed", "tentative", "ambiguous", "conflicting", "unknown"]}
+          }
+        },
+        "independent_contribution": {"type": "object"},
+        "difference_matrix": {"type": "object"},
+        "framework_selection": {"type": "object"},
+        "form_selection": {"type": "object"},
+        "new_topic": {},
+        "new_argument": {},
+        "outline": {},
+        "outline_gate": {"enum": ["not_started", "previewed", "approved", "revision_requested", "not_required"]},
+        "draft_version": {},
+        "overlap_audit": {"type": "object"},
+        "originality_gate": {"enum": ["pass", "conditional_pass", "fail", "not_run"]},
+        "remaining_actions": {"type": "array"},
+        "completion_status": {"enum": ["pass", "conditional_pass", "fail"]}
+      }
+    },
+    "handoff": {"type": "object"}
+  }
+}

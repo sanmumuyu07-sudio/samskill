@@ -1,0 +1,91 @@
+{
+  "intake": {
+    "delivery_audience": "self",
+    "delivery_mode": "ledger",
+    "confirmed": ["用户提供五年从业经历和两份项目材料"],
+    "tentative": ["公开案例页可能降低陌生关系的判断成本"],
+    "ambiguous": [],
+    "conflicting": [],
+    "unknown": ["陌生用户是否能准确识别其专业判断"],
+    "blocking_confirmations": ["公开项目材料的授权范围"],
+    "nonblocking_unknowns": ["具体邀请数量的自然波动"],
+    "affected_sections": ["公开案例呈现"]
+  },
+  "project_id": "demo-public-expression",
+  "generated_at": "2026-08-12T12:00:00+08:00",
+  "diagnosis_mode": "new",
+  "user_role": "owner",
+  "target": {
+    "statement": "30天内获得3次来自目标行业的有效邀请或合作沟通",
+    "window": "30天",
+    "primary_metric": "有效邀请或合作沟通数",
+    "guardrail_metric": "每周投入不超过8小时"
+  },
+  "stage": {
+    "code": "S1",
+    "scope": "职业机会目标链",
+    "confidence": "medium"
+  },
+  "capabilities": {
+    "formed": ["有五年可核验从业经历"],
+    "signals": ["曾通过熟人获得行业分享邀请"],
+    "unvalidated": ["陌生用户是否能通过内容识别其专业判断"]
+  },
+  "evidence_added": [
+    {
+      "id": "F-001",
+      "label": "F",
+      "statement": "用户提供五年从业经历和两份项目材料",
+      "source": "本轮用户材料"
+    },
+    {
+      "id": "H-001",
+      "label": "H",
+      "statement": "一份公开案例页可能降低陌生行业关系的判断成本",
+      "source": "待验证假设"
+    }
+  ],
+  "bottleneck": {
+    "module": "03",
+    "statement": "真实能力尚未变成陌生人可检查的公共证明",
+    "rationale": "已有内部经历，但缺少公开作品和来源记录",
+    "alternative_explanation": "目标行业关系入口不足"
+  },
+  "decisions": {
+    "keep": ["保留已有项目原始材料"],
+    "change": ["完成一份带贡献归因的公开案例页"],
+    "defer": ["暂不设计全年选题和付费产品"]
+  },
+  "seven_day_plan": [
+    {
+      "owner": "项目本人",
+      "action": "从一个已授权项目中整理问题、动作、贡献、结果和边界",
+      "output": "一份可公开案例页和一次定向发送记录",
+      "done_signal": "至少2位目标行业对象完成阅读并给出可记录反馈",
+      "stop_condition": "无法确认材料授权时停止公开，改用匿名过程样本"
+    }
+  ],
+  "experiment": {
+    "hypothesis": "公开案例页能够帮助目标行业对象理解其专业能力",
+    "variable": "是否发送案例页",
+    "constants": ["目标对象类型", "沟通入口"],
+    "window": "7天",
+    "pass_condition": "获得2条能够复述其能力的有效反馈",
+    "fail_condition": "反馈仍无法说明其具体能力",
+    "stop_condition": "出现隐私或授权风险",
+    "scale_condition": "不同对象重复出现同类能力识别"
+  },
+  "next_route": {
+    "function": "个人资产与公共证明",
+    "why_now": "当前最早断点在能力信号，而不是内容产量",
+    "required_inputs": ["已授权项目材料", "个人贡献说明", "目标行业对象名单"]
+  },
+  "permission": {
+    "preview_only": true,
+    "approved_write_path": null
+  },
+  "versions": {
+    "skill": "2.2.0-beta",
+    "atom_library": "2.0"
+  }
+}

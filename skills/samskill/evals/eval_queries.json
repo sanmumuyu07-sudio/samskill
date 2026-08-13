@@ -1,0 +1,134 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "我不知道现在该先做定位、产品还是内容，你帮我判断。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "接着上次的项目继续，下一步做什么？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "我想从零做个人IP，但不知道怎么开始。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "账号有流量没咨询，我不确定是内容还是后端。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "帮我看看这个项目现在卡在哪。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "/samskill",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "材料都在项目文件夹里，读取以后告诉我先做什么。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "我有三个问题混在一起，先帮我找最早断点。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我做完上一个Skill了，继续下一步。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我第一次用Samskill，怎么开始？",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "使用 $sam-write 写这篇文案。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "用 $sam-product 设计知识库产品。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "只把这个标题改短一点。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "帮我查天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "把Word转PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "安装这套Skill。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "审核Samskill文件是否完整。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "给我生成一张海报。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "查询最新抖音规则。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "我只想聊聊情绪。",
+    "should_trigger": false
+  },
+  {
+    "id": "trigger-11",
+    "split": "validation",
+    "query": "深描这个赛道的人群，社会心理和市场价值都要。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-12",
+    "split": "validation",
+    "query": "全景拆号：把这个账号的人群内容商业和团队一起拆。",
+    "should_trigger": true
+  }
+]

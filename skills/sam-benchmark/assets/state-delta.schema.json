@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "sam-benchmark state delta",
+  "type": "object",
+  "required": [
+    "intake",
+    "source_skill",
+    "project_id",
+    "generated_at",
+    "task",
+    "confidence",
+    "evidence",
+    "conclusion",
+    "keep",
+    "change",
+    "defer",
+    "data",
+    "actions",
+    "next_route",
+    "permission",
+    "versions"
+  ],
+  "properties": {
+    "intake": {"type": "object", "required": ["delivery_audience", "delivery_mode", "confirmed", "tentative", "ambiguous", "conflicting", "unknown", "blocking_confirmations", "nonblocking_unknowns", "affected_sections"], "properties": {"delivery_audience": {"enum": ["self", "team", "client", "project"]}, "delivery_mode": {"enum": ["conversation", "tentative", "internal", "client", "ledger"]}, "confirmed": {"type": "array"}, "tentative": {"type": "array"}, "ambiguous": {"type": "array"}, "conflicting": {"type": "array"}, "unknown": {"type": "array"}, "blocking_confirmations": {"type": "array"}, "nonblocking_unknowns": {"type": "array"}, "affected_sections": {"type": "array"}}, "additionalProperties": false},
+    "source_skill": {
+      "const": "sam-benchmark"
+    },
+    "project_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generated_at": {
+      "type": "string"
+    },
+    "task": {
+      "type": "string",
+      "minLength": 1
+    },
+    "confidence": {
+      "enum": [
+        "high",
+        "medium",
+        "low"
+      ]
+    },
+    "evidence": {
+      "type": "array"
+    },
+    "conclusion": {
+      "type": "string",
+      "minLength": 1
+    },
+    "keep": {
+      "type": "array"
+    },
+    "change": {
+      "type": "array",
+      "minItems": 1
+    },
+    "defer": {
+      "type": "array"
+    },
+    "data": {
+      "type": "object",
+      "required": ["research_question", "analysis_mode", "research_window", "sampling_plan", "sample_inventory", "qualification", "facts", "observations", "inferences", "unknowns", "audience_system", "content_strategy", "business_model", "result_evidence", "alternative_explanations", "nontransferable_conditions", "migration_experiment"],
+      "properties": {
+        "research_question": {},
+        "analysis_mode": {"enum": ["qualification", "single_content", "account_full", "multi_account"]},
+        "research_window": {},
+        "sampling_plan": {},
+        "sample_inventory": {"type": "array"},
+        "benchmark_scope": {},
+        "qualification": {},
+        "facts": {},
+        "observations": {},
+        "repeated_patterns": {},
+        "inferences": {},
+        "unknowns": {},
+        "market_context": {},
+        "audience_system": {},
+        "positioning_system": {},
+        "content_strategy": {},
+        "content_sample_analysis": {},
+        "distribution_system": {},
+        "relationship_path": {},
+        "mechanism": {},
+        "business_model": {},
+        "payer": {},
+        "purchase_trigger": {},
+        "conversion_entry": {},
+        "offer_ladder": {},
+        "delivery_model": {},
+        "revenue_logic": {},
+        "commercial_dependencies": {},
+        "commercial_unknowns": {},
+        "resource_team_system": {},
+        "result_evidence": {},
+        "alternative_explanations": {"type": "array"},
+        "counterexamples": {"type": "array"},
+        "nontransferable_conditions": {"type": "array"},
+        "condition_gap": {},
+        "migration_experiment": {},
+        "rights_boundary": {}
+        ,
+        "reconstruction_handoff": {"type": "object"}
+      }
+    },
+    "actions": {
+      "type": "array",
+      "minItems": 1
+    },
+    "next_route": {
+      "type": "string"
+    },
+    "permission": {
+      "type": "object",
+      "properties": {
+        "preview_only": {
+          "const": true
+        },
+        "approved_write_path": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "preview_only",
+        "approved_write_path"
+      ]
+    },
+    "versions": {
+      "type": "object",
+      "properties": {
+        "skill": {
+          "const": "2.3.0-beta"
+        },
+        "atom_library": {
+          "const": "2.0"
+        }
+      },
+      "required": [
+        "skill",
+        "atom_library"
+      ]
+    }
+  }
+}

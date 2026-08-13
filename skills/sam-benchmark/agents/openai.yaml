@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜对标与机制迁移"
+  short_description: "全景拆解账号、内容与商业案例，迁移成当前项目的最小实验"
+  default_prompt: "使用 $sam-benchmark 【单条拆解／全景拆号／多账号比较】这些材料【】。我要回答的问题是【】，研究窗口是【】，我的项目条件是【用户／产品／平台／资源／阶段】。"

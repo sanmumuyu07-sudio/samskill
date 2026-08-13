@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜内容研究"
+  short_description: "把陌生问题研究成有来源、有反例、有边界的可靠命题"
+  default_prompt: "使用 $sam-research 研究【问题】。研究要帮助【对象】改变【理解或行动】，当前判断是【】，最大不确定是【】，时间、地区、平台和来源要求是【】。"

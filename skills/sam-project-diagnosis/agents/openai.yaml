@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜项目阶段诊断"
+  short_description: "判断项目阶段与最早主问题，生成可检查、可停止的验证动作"
+  default_prompt: "使用 $sam-project-diagnosis 诊断这个项目。我是【本人／负责人／运营】，未来30—90天希望【】，已有【能力／产品／账号／结果】，最近一次动作和结果是【】。请给阶段、主问题和下一轮验证。"

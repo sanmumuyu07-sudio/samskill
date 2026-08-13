@@ -1,0 +1,128 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "AI赛道很火，我也懂一点工具，这个市场值不值得进入？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "我有一家线下门店，想通过短视频增长原有业务，先帮我判断商业路径。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "这个账号播放不错但赚不到钱，帮我区分是流量问题还是商业模式问题。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "广告IP和线索成交IP的逻辑有什么不同，我的项目该选哪个？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "我们想进入留学行业，请先判断真实需求、竞争和个人机会。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "请使用 $sam-business 处理：AI赛道很火，我也懂一点工具，这个市场值不值得进入？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "我把资料放在文件夹里了。我有一家线下门店，想通过短视频增长原有业务，先帮我判断商业路径。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "接着上次的项目状态继续。这个账号播放不错但赚不到钱，帮我区分是流量问题还是商业模式问题。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "我说得比较乱，你先按已有信息判断。广告IP和线索成交IP的逻辑有什么不同，我的项目该选哪个？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我需要一份可以执行和验证的方案：我们想进入留学行业，请先判断真实需求、竞争和个人机会。",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "把我的299元知识库设计成完整产品。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "帮我写一篇讲AI焦虑的短视频文案。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "拆解这个博主的10条爆款。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "给这个账号做一句定位。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "分析这条视频为什么只有500播放。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "帮我查明天的天气。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "把这个Word转成PDF。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "帮我写一段Python排序代码。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "我最近心情很差，只想找人聊聊。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "审核 sam-business 这个Skill本身是否符合官方规范。",
+    "should_trigger": false
+  },
+  {
+    "id": "trigger-11",
+    "split": "validation",
+    "query": "比较这几类人群的市场价值、竞争、获客和交付条件。",
+    "should_trigger": true
+  }
+]

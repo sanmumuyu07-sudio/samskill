@@ -1,0 +1,122 @@
+[
+  {
+    "id": "trigger-01",
+    "split": "train",
+    "query": "我想做个人IP，但不知道从哪里开始。我以前做过五年健身教练。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-02",
+    "split": "train",
+    "query": "帮我判断一下这个一人媒体项目现在处于什么阶段，最先该补什么。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-03",
+    "split": "train",
+    "query": "账号每个月有几百万播放，但几乎没有咨询，能不能先帮我找真正的问题？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-04",
+    "split": "train",
+    "query": "每月300条咨询，成交率只有2%，我不确定是线索质量、产品还是销售的问题。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-05",
+    "split": "train",
+    "query": "课程刚卖给5个人，还没收反馈，我想马上投流卖500份，帮我判断能不能放大。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-06",
+    "split": "train",
+    "query": "我是运营，刚接一个老板的短视频获客项目。资料很多，但不知道先查定位、内容还是后端，帮我做接盘诊断。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-07",
+    "split": "validation",
+    "query": "团队能按SOP拍，但我一离开流量就往下掉，他们只会模仿不会迭代。下一步到底修哪里？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-08",
+    "split": "validation",
+    "query": "我有专业能力和线下服务，想用自然流短视频获客。请先判断我的条件和未来30天启动顺序。",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-09",
+    "split": "validation",
+    "query": "AI每个月能帮我出40条内容，但质量不稳定，数据也不知道怎么回填。我现在到底卡在哪一层？",
+    "should_trigger": true
+  },
+  {
+    "id": "trigger-10",
+    "split": "validation",
+    "query": "我们做公共表达，不卖课，目标是行业邀请和职业机会。能否诊断现阶段的账号和下一轮验证？",
+    "should_trigger": true
+  },
+  {
+    "id": "negative-01",
+    "split": "train",
+    "query": "把这段短视频的前3秒改得更有吸引力。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-02",
+    "split": "train",
+    "query": "帮我为知识付费账号写30个小红书标题。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-03",
+    "split": "train",
+    "query": "这是一个同行账号的主页和20条视频，请拆解他的内容结构和商业模式。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-04",
+    "split": "train",
+    "query": "请解释什么叫一人媒体，它和个人IP有什么区别？",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-05",
+    "split": "train",
+    "query": "我最近很焦虑，总觉得自己什么都做不好，你能安慰我一下吗？",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-06",
+    "split": "train",
+    "query": "把这份课程介绍做成一张紫色主题长图海报。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-07",
+    "split": "validation",
+    "query": "帮我安装并检查这个skill能不能被Codex识别。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-08",
+    "split": "validation",
+    "query": "审核叁木原子库是否足够支撑后续创建Skill。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-09",
+    "split": "validation",
+    "query": "请查一下抖音2026年8月最新的数据字段和平台规则。",
+    "should_trigger": false
+  },
+  {
+    "id": "negative-10",
+    "split": "validation",
+    "query": "我把近30条视频的数据表发给你，只分析哪类选题的完播率更高。",
+    "should_trigger": false
+  }
+]

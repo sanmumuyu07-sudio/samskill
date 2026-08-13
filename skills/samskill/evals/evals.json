@@ -1,0 +1,125 @@
+{
+  "skill_name": "samskill",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我不知道现在该先做定位、产品还是内容，你帮我判断。",
+      "expected_output": "路由到 sam-project-diagnosis 并立即继续，不输出整套菜单。",
+      "files": [],
+      "assertions": [
+        "选择 sam-project-diagnosis",
+        "只选择一个入口",
+        "利用已有信息，不重复问卷",
+        "路由后继续执行目标 Skill"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "我想从零做个人IP，但不知道怎么开始。",
+      "expected_output": "路由到 sam-project-diagnosis 并立即继续，不输出整套菜单。",
+      "files": [],
+      "assertions": [
+        "选择 sam-project-diagnosis",
+        "只选择一个入口",
+        "利用已有信息，不重复问卷",
+        "路由后继续执行目标 Skill"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "账号有流量没咨询，我不确定是内容还是后端。",
+      "expected_output": "路由到 sam-project-diagnosis 并立即继续，不输出整套菜单。",
+      "files": [],
+      "assertions": [
+        "选择 sam-project-diagnosis",
+        "只选择一个入口",
+        "利用已有信息，不重复问卷",
+        "路由后继续执行目标 Skill"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "我需要写一篇完整稿，选题证据都有了。",
+      "expected_output": "路由到 sam-write 并立即继续，不输出整套菜单。",
+      "files": [],
+      "assertions": [
+        "选择 sam-write",
+        "只选择一个入口",
+        "利用已有信息，不重复问卷",
+        "路由后继续执行目标 Skill"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "稿子写完了，能不能发？",
+      "expected_output": "路由到 sam-audit 并立即继续，不输出整套菜单。",
+      "files": [],
+      "assertions": [
+        "选择 sam-audit",
+        "只选择一个入口",
+        "利用已有信息，不重复问卷",
+        "路由后继续执行目标 Skill"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "我项目旧模板要求依次调用四个旧内容工具，但现在只想使用 Samskill 完成创作和质检。",
+      "expected_output": "把旧调用链视为历史材料，识别功能目标并路由 Samskill 当前专项能力，不要求安装或调用外部 Skill。",
+      "assertions": [
+        "不重复旧工具名",
+        "不要求安装外部依赖",
+        "只选择一个当前必要的 Samskill 入口",
+        "说明旧模板不能阻断当前流程"
+      ],
+      "files": []
+    },
+    {
+      "id": 7,
+      "prompt": "我不知道 Skill 名，直接帮我选择框架，写完再进入发布审计。",
+      "expected_output": "先路由当前最早任务到框架选择与创作，不预先执行整条长链。",
+      "assertions": [
+        "识别自然语言命令",
+        "只进入一个当前必要任务",
+        "不要求用户记 Skill 名",
+        "保留后续发布审计交接"
+      ],
+      "files": []
+    },
+    {
+      "id": 8,
+      "prompt": "帮我洗这条同行内容，但我要的是新的内容，不是拆解报告。",
+      "expected_output": "路由到原创参考重构，不路由到纯对标研究。",
+      "assertions": [
+        "进入 sam-reconstruct",
+        "说明会交付独立贡献和原创审计",
+        "不承诺同义替换",
+        "不重复问已有材料"
+      ],
+      "files": []
+    },
+    {
+      "id": 9,
+      "prompt": "深描这个赛道的人群，要把社会心理、市场、内容和产品连起来。",
+      "expected_output": "路由 sam-position 的深描或人群图谱模式，不停在总入口。",
+      "files": [],
+      "assertions": [
+        "识别人群深度研究意图",
+        "进入 sam-position",
+        "携带交付对象和已有材料",
+        "不在路由层直接生成画像"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "全景拆解这个账号的人群、栏目、流量、承接、产品和商业模式。",
+      "expected_output": "路由 sam-benchmark 的单账号全景模式并立即执行取样入口。",
+      "files": [],
+      "assertions": [
+        "识别全景拆号意图",
+        "进入 sam-benchmark",
+        "先定义研究窗口和样本",
+        "不把单条爆款当全账号"
+      ]
+    }
+  ]
+}

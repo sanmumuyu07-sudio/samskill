@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜产品与变现"
+  short_description: "把能力与资料变成可选择、可交付、可验证的产品"
+  default_prompt: "使用 $sam-product 设计这项产品。目标用户是【】，要完成的变化是【】，当前产品、价格与交付是【】，已有咨询、付款或交付证据是【】。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "叁木｜选题判断"
+  short_description: "判断选题为什么此刻值得存在，并生成可写、可验证的选题卡"
+  default_prompt: "使用 $sam-topic 判断选题【】。写给【】，对方正在【处境】，希望改变【理解或行动】，已有材料是【】，准备提出的新判断是【】。"
